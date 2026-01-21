@@ -20,35 +20,16 @@ const sidebars = {
     'intro',
     {
       type: 'category',
-      label: 'ROS 2 Fundamentals',
+      label: 'Module 1: The Robotic Nervous System (ROS 2)',
       items: [
-        'ros2-fundamentals/index',
-        'ros2-fundamentals/nodes-topics-services-actions',
-        'ros2-fundamentals/ros2-architecture'
+        'module-1/index',
+        'module-1/nodes-topics-services-actions',
+        'module-1/ros2-architecture',
+        'module-1/writing-ros2-nodes-python',
+        'module-1/connecting-ai-logic-controllers',
+        'module-1/urdf-links-joints-sensors',
+        'module-1/structure-humanoid-robots'
       ],
-    },
-    {
-      type: 'category',
-      label: 'Python Agents',
-      items: [
-        'python-agents/index',
-        'python-agents/writing-ros2-nodes-python',
-        'python-agents/connecting-ai-logic-controllers'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Humanoid Modeling',
-      items: [
-        'humanoid-modeling/index',
-        'humanoid-modeling/urdf-links-joints-sensors',
-        'humanoid-modeling/structure-humanoid-robots'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Module 1',
-      items: ['tutorial-basics/create-a-document'],
     },
     {
       type: 'category',
