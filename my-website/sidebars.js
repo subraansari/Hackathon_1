@@ -33,7 +33,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Module 2',
+      label: 'Module 2: Digital Twin',
       items: [
         'digital-twin/index',
         'digital-twin/physics-simulation-with-gazebo',
@@ -43,7 +43,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Module 3',
+      label: 'Module 3: Isaac AI Brain',
       items: [
         'isaac-ai-brain/index',
         'isaac-ai-brain/isaac-sim-fundamentals',
@@ -55,9 +55,10 @@ const sidebars = {
       type: 'category',
       label: 'Module 4: Vision-Language-Action (VLA)',
       items: [
-        'isaac-ai-brain/voice-to-action-pipelines',
-        'isaac-ai-brain/llm-cognitive-planning',
-        'isaac-ai-brain/capstone-autonomous-humanoid'
+        'module-4/index',
+        'module-4/voice-to-action-pipelines',
+        'module-4/llm-cognitive-planning',
+        'module-4/capstone-autonomous-humanoid'
       ],
     },
   ],

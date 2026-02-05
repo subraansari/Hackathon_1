@@ -1,0 +1,290 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1a73e8; /* Modern blue for tech/robotics */
+  --ifm-color-primary-dark: #1865cc;
+  --ifm-color-primary-darker: #1658b0;
+  --ifm-color-primary-darkest: #12478f;
+  --ifm-color-primary-light: #3b8cff;
+  --ifm-color-primary-lighter: #5d9dff;
+  --ifm-color-primary-lightest: #80b4ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(26, 115, 232, 0.1);
+
+  /* Additional modern colors for robotics theme */
+  --robotics-accent: #0d8050;
+  --robotics-secondary: #ff6d01;
+  --robotics-neutral: #5f6368;
+  --robotics-light-bg: #f8f9fa;
+  --robotics-dark-bg: #202124;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4285f4; /* Lighter blue for better dark mode contrast */
+  --ifm-color-primary-dark: #3367d6;
+  --ifm-color-primary-darker: #2d5db1;
+  --ifm-color-primary-darkest: #254d8e;
+  --ifm-color-primary-light: #669ff6;
+  --ifm-color-primary-lighter: #8ab7f8;
+  --ifm-color-primary-lightest: #add0fa;
+  --docusaurus-highlighted-code-line-bg: rgba(66, 133, 244, 0.2);
+
+  /* Dark mode specific colors */
+  --robotics-accent: #0d9d58;
+  --robotics-secondary: #ff8533;
+  --robotics-neutral: #bdc1c6;
+  --robotics-light-bg: #202124;
+  --robotics-dark-bg: #171717;
+}
+
+/* Enhanced typography */
+.hero__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Card styling for features */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Button enhancements */
+.button--secondary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+}
+
+/* Code block enhancements */
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar enhancements */
+.menu__list-item-collapsible:hover {
+  background-color: rgba(26, 115, 232, 0.05);
+  border-radius: 4px;
+}
+
+/* Table enhancements */
+.table-markdown {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table-markdown th {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.table-markdown tr:not(:last-child) td {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Navbar enhancements */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer enhancements */
+.footer {
+  background-color: var(--ifm-background-surface-color);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Breadcrumb enhancements */
+.pagination-nav__item {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__item:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(26, 115, 232, 0.1);
+}
+
+/* Responsive design enhancements */
+@media (max-width: 996px) {
+  .hero__title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .button--lg {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .navbar__item {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .featureSvg {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 4rem 0;
+  }
+
+  .features {
+    padding: 1.5rem 0;
+  }
+
+  .col {
+    margin-bottom: 2rem;
+  }
+
+  .col:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-sidebar__brand {
+    padding: 1rem;
+  }
+
+  .menu {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer__col {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__col:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Animation enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Accessibility enhancements */
+.focusable:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Improved code block styling */
+.prism-code {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  padding: 1rem !important;
+}
+
+/* Search enhancements */
+.navbar__search-input {
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: border-color 0.2s ease;
+}
+
+.navbar__search-input:focus {
+  border-color: var(--ifm-color-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Improved table styling */
+.markdown table {
+  display: table;
+  table-layout: auto;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.markdown table tbody + tbody {
+  border-top: 2px solid var(--ifm-color-emphasis-300);
+}

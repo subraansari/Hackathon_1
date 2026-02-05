@@ -1,0 +1,95 @@
+.modulesSection {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-surface-color);
+}
+
+.moduleCard {
+  display: block;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: var(--ifm-background-color);
+}
+
+.moduleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary);
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  color: white;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardDescription {
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.6;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learnMore {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.progressContainer {
+  flex-grow: 1;
+  height: 8px;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: var(--ifm-color-primary);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 996px) {
+  .modulesSection {
+    padding: 2rem 0;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardBody {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .moduleCard {
+    margin-bottom: 1rem;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+}
